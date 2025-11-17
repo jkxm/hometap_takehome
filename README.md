@@ -24,7 +24,7 @@ yarn dev
 
 Given the requirements for the problem, I thought using the adapter pattern would be the best approach. 
 
-The idea being, each api endpoint would get its own adapter class to retrieve data from their respective endpoint, and each class would be responsible for normalizing the response.
+The idea being, each api endpoint would get its own adapter class to retrieve data from their respective endpoint, and each class would be responsible for normalizing the response. Adapters can be found in `backend/properties/adapters`
 
 ```
 class BaseAPIAdapter(ABC):
