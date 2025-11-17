@@ -8,9 +8,6 @@ def property_view(request):
 
     if not address:
         return JsonResponse({"error": "Address is required"}, status=400)
-    
-    provider_one = ProviderOneAdapter(address=address)
-    provider_two = ProviderTwoAdapter(address=address)
 
     providers = {
         "Provider 1": ProviderOneAdapter,
